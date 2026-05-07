@@ -43,10 +43,9 @@ public class WizardServiceImpl implements WizardService {
     }
 
     @Override
-    public Optional<Wizard> getPatronus(String patronus) {
+    public List<Wizard> getPatronus(String patronus) {
         return wizardRepository.findByPatronus(patronus);
     }
-
     @Override
     public Wizard deleteWizard(UUID id) {
         Wizard existWizard = wizardRepository.getWizardById(id);

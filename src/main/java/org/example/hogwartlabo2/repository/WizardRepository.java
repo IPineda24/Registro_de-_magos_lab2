@@ -10,6 +10,6 @@ import java.util.UUID;
 // WizardRepository.java
 public interface WizardRepository extends JpaRepository<Wizard, UUID> {
     List<Wizard> findByDeathEaterTrue();
-    Optional<Wizard> findByPatronus(String patronus);
+    List<Wizard> findByPatronus(String patronus);
     Wizard getWizardById(UUID id);
 }
