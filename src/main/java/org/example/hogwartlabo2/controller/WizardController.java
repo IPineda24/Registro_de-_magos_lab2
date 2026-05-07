@@ -45,6 +45,7 @@ public class WizardController {
     public List<Wizard> getByPatronus(@PathVariable String patronus) {
         return wizardService.getPatronus(patronus);
     }
+
     
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Wizard> deleteWizard(@PathVariable UUID id) {
