@@ -1,6 +1,7 @@
 package org.example.hogwartlabo2.domain.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,9 +33,7 @@ public class Wizard {
     private String patronus;
 
     @Column(name = "isDeatheater")
-    private Boolean isDeatheater;
-
-
+    private Boolean deathEater;
 
 
 }

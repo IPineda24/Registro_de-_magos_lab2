@@ -27,7 +27,7 @@ public class WizardServiceImpl implements WizardService {
         existWizard.setName(wizard.getName());
         existWizard.setHouse(wizard.getHouse());
         existWizard.setPatronus(wizard.getPatronus());
-        existWizard.setIsDeatheater(wizard.getIsDeatheater());
+        existWizard.setDeathEater(wizard.getDeathEater());
         wizardRepository.save(existWizard);
 
     }
@@ -39,7 +39,7 @@ public class WizardServiceImpl implements WizardService {
 
     @Override
     public List<Wizard> getWizardDeatheater() {
-        return wizardRepository.findByIsDeathEaterTrue();
+        return wizardRepository.findByDeathEaterTrue();
     }
 
     @Override

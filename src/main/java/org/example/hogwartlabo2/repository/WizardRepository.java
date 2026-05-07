@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+// WizardRepository.java
 public interface WizardRepository extends JpaRepository<Wizard, UUID> {
-
-    List<Wizard> findByIsDeathEaterTrue();
+    List<Wizard> findByDeathEaterTrue();
     Optional<Wizard> findByPatronus(String patronus);
     Wizard getWizardById(UUID id);
 }
